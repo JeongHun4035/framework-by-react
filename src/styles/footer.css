@@ -1,15 +1,27 @@
 .footer-wrapper {
   display: flex;
+  flex-direction: column; /* 열로 변경 */
+  justify-content: space-around;
+}
+
+.footer-items {
+  display: flex;
   flex-direction: row;
   justify-content: space-around;
   padding: 10px;
 }
 
-.footer-items {
-  flex-direction: column;
+.footer-item {
   text-align: center;
+  color: lightgray;
 }
 
-.footer-items h1 {
+.footer-item h1 {
   font-size: 18px;
+}
+
+.footer-outer-link {
+  display: flex;
+  justify-content: space-around;
+  color: lightgray;
 }

@@ -1,20 +1,38 @@
+import { useEffect, useState } from "react";
 import "~/styles/footer.css";
+import { itemArray } from "~/mock/itemArray.json";
+import { IFooterItem } from "~/types/footer";
+
+const FooterContents = () => {
+  const [items, setItemArray] = useState<IFooterItem[]>([]);
+  useEffect(() => {
+    setItemArray(itemArray);
+  }, []);
+  return (
+    <>
+      {items.map((item) => (
+        <div className="footer-item" key={item.key}>
+          <h1>{item.title}</h1>
+          <div>{item.description}</div>
+        </div>
+      ))}
+    </>
+  );
+};
+
+const FooterLink = () => {
+  return <div> this area is decorated Icon and Link, created by JeongHun</div>;
+};
 
 const Footer = () => {
   return (
     <>
       <div className="footer-wrapper">
         <div className="footer-items">
-          <div>
-            <h1>Footer Area MainTitle</h1>
-          </div>
-          <div>contents discription</div>
+          <FooterContents />
         </div>
-        <div className="footer-items">
-          <div>
-            <h1>Footer Area MainTitle</h1>
-          </div>
-          <div>contents discription</div>
+        <div className="footer-outer-link">
+          <FooterLink />
         </div>
       </div>
     </>
