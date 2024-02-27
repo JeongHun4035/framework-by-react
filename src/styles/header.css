@@ -1,0 +1,14 @@
+.header-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.header-menus {
+  font-size: 15px;
+}
+
+.header-items {
+  justify-content: flex-end;
+}
