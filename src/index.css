@@ -1,4 +1,6 @@
 :root {
+  display: flex;
+  flex-direction: column;
   background-color: rgb(38 38 38);
   color: white;
   margin: 0;
@@ -6,10 +8,18 @@
 }
 
 * {
-  z-index: 2;
   margin: 0;
 }
 
 .header-wrapper {
+  position: sticky;
+  top: 0;
+  background-color: rgb(10, 10, 10);
+}
+
+.footer-wrapper {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
   background-color: rgb(10 10 10);
 }

@@ -7,7 +7,7 @@ const Header = () => {
         <h1>menu</h1>
       </div>
       <div>
-        <h1>items-Area</h1>
+        <h1>items</h1>
       </div>
     </div>
   );
