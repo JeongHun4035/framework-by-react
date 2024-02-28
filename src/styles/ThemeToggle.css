@@ -1,0 +1,42 @@
+.toggle-container {
+  width: 50px;
+  height: 16px;
+  background-color: #ccc;
+  border-radius: 15px;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border: solid;
+}
+
+.slider {
+  width: 15px;
+  height: 15px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 2px;
+  transition: transform 0.3s ease;
+}
+
+.label {
+  text-align: center;
+}
+
+.on {
+  color: white;
+}
+
+.off {
+  color: black;
+}
+
+.toggle-container.active {
+  background-color: rgb(0 0 0);
+}
+
+.toggle-container.active .slider {
+  transform: translate(30px, -50%);
+}

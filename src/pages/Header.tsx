@@ -3,10 +3,10 @@ import "~/styles/header.css";
 const Header = () => {
   return (
     <div className="header-wrapper">
-      <div>
+      <div className="header-items">
         <h1>menu</h1>
       </div>
-      <div>
+      <div className="header-items">
         <h1>items</h1>
       </div>
     </div>

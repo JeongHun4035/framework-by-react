@@ -5,9 +5,7 @@
   padding: 10px;
 }
 
-.header-menus {
-  font-size: 15px;
-}
-
 .header-items {
+  display: flex;
+  flex-direction: row;
 }
