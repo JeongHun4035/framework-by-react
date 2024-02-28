@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "~/styles/ThemeToggle.css";
+import "~/styles/themeToggle.css";
 
 const ThemeToggle = () => {
   const [isToggled, setIsToggled] = useState(false);
