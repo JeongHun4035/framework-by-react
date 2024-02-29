@@ -2,6 +2,7 @@ import "~/styles/menu.css";
 import { dataList } from "~/mock/menus.json";
 import { useEffect, useState } from "react";
 import { IMenu } from "~/types/menu";
+
 const Menus = () => {
   const [menuList, setMenu] = useState<IMenu[]>([]);
   useEffect(() => {
@@ -23,10 +24,10 @@ const Menus = () => {
   const renderMenu = (menus: IMenu[]) => {
     return menus.map((menu) => (
       <div className="menu" key={menu.menuId}>
-        {menu.children?.length ? (
+        {menu.parentId === "#" ? (
           <h1>{menu.menuTitle}</h1>
         ) : (
-          <p>{menu.menuTitle}</p>
+          <span> - {menu.menuTitle}</span>
         )}
         {menu.children && renderMenu(menu.children)}{" "}
       </div>
