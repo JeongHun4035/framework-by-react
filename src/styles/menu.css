@@ -8,6 +8,7 @@
 }
 
 .menu {
+  margin-top: 5px;
   margin-left: 5px;
 }
 
@@ -19,4 +20,9 @@
 
 .menu span {
   font-size: 15px;
+}
+
+.menu :hover {
+  cursor: pointer;
+  color: rgb(132 204 22);
 }

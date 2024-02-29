@@ -14,6 +14,7 @@ const Menus = () => {
         .map((item) => ({
           ...item,
           children: buildMenuHierarchy(item.menuId),
+          expanded: false,
         }));
     };
 
@@ -21,15 +22,38 @@ const Menus = () => {
     setMenu(menus);
   }, []);
 
+  const toggleMenu = (menuId: string) => {
+    setMenu((prevMenuList) =>
+      prevMenuList.map((menu) =>
+        menu.menuId === menuId
+          ? { ...menu, expanded: !menu.expanded }
+          : menu.children && menu.children.length > 0
+          ? toggleSubMenu(menu, menuId)
+          : menu
+      )
+    );
+  };
+
+  const toggleSubMenu = (menu: IMenu, targetMenuId: string): IMenu => {
+    return {
+      ...menu,
+      children: menu.children.map((childMenu) =>
+        childMenu.menuId === targetMenuId
+          ? { ...childMenu, expanded: !childMenu.expanded }
+          : toggleSubMenu(childMenu, targetMenuId)
+      ),
+    };
+  };
+
   const renderMenu = (menus: IMenu[]) => {
     return menus.map((menu) => (
       <div className="menu" key={menu.menuId}>
         {menu.parentId === "#" ? (
-          <h1>{menu.menuTitle}</h1>
+          <h1 onClick={() => toggleMenu(menu.menuId)}>{menu.menuTitle}</h1>
         ) : (
-          <span> - {menu.menuTitle}</span>
+          <span onClick={() => toggleMenu(menu.menuId)}> {menu.menuTitle}</span>
         )}
-        {menu.children && renderMenu(menu.children)}{" "}
+        {menu.expanded && menu.children && renderMenu(menu.children)}
       </div>
     ));
   };

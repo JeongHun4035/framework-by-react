@@ -3,4 +3,5 @@ export interface IMenu {
   menuId: string;
   menuTitle: string;
   children?: IMenu[];
+  expanded?: boolean;
 }
