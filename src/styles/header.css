@@ -17,18 +17,12 @@
   overflow: hidden;
   width: 100%;
   max-height: 0;
-  transition: max-height 0.3s ease-out;
+  transition: max-height 0.6s ease-out;
   z-index: 1000;
+  border-bottom: solid;
+  border-color: black;
 }
 
 .menu-container.active {
   max-height: 1000px;
 }
-
-/* .menu-area {
-  display: flex;
-  flex-direction: row;
-  background-color: rgb(255, 255, 255);
-  color: black;
-  height: 100;
-} */

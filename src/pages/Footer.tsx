@@ -21,7 +21,7 @@ const FooterContents = () => {
 };
 
 const FooterLink = () => {
-  return <div> this area is decorated Icon and Link, created by JeongHun</div>;
+  return <div> this area is decorated Icon and Link</div>;
 };
 
 const Footer = () => {

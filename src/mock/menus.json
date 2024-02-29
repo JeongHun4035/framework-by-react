@@ -1,0 +1,74 @@
+{
+  "dataList": [
+    {
+      "parentId": "#",
+      "menuId": "menu_01",
+      "menuTitle": "1 메뉴"
+    },
+    {
+      "parentId": "menu_01",
+      "menuId": "menu_01_01",
+      "menuTitle": "1-1 메뉴"
+    },
+    {
+      "parentId": "menu_01",
+      "menuId": "menu_01_02",
+      "menuTitle": "1-2"
+    },
+    {
+      "parentId": "#",
+      "menuId": "menu_02",
+      "menuTitle": "2 메뉴"
+    },
+    {
+      "parentId": "menu_02",
+      "menuId": "menu_02-01",
+      "menuTitle": "2-1 메뉴"
+    },
+    {
+      "parentId": "#",
+      "menuId": "menu_03",
+      "menuTitle": "3 메뉴"
+    },
+    {
+      "parentId": "menu_03",
+      "menuId": "menu_03-01",
+      "menuTitle": "3-1 메뉴"
+    },
+    {
+      "parentId": "menu_03",
+      "menuId": "menu_03-02",
+      "menuTitle": "3-2 메뉴"
+    },
+    {
+      "parentId": "menu_03",
+      "menuId": "menu_03-03",
+      "menuTitle": "3-3 메뉴"
+    },
+    {
+      "parentId": "#",
+      "menuId": "menu_04",
+      "menuTitle": "4 메뉴"
+    },
+    {
+      "parentId": "menu_04",
+      "menuId": "menu_04-01",
+      "menuTitle": "4-1 메뉴"
+    },
+    {
+      "parentId": "menu_04",
+      "menuId": "menu_04-02",
+      "menuTitle": "4-2 메뉴"
+    },
+    {
+      "parentId": "menu_04",
+      "menuId": "menu_04-03",
+      "menuTitle": "4-3 메뉴"
+    },
+    {
+      "parentId": "menu_04",
+      "menuId": "menu_04-04",
+      "menuTitle": "4-4 메뉴"
+    }
+  ]
+}

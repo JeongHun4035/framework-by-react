@@ -1,4 +1,13 @@
 .menus-wrapper {
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
+  color: white;
+  background-color: rgb(155 155 155);
+}
+
+.menu h1 {
+  font-feature-settings: "smcp", "zero";
+  font-size: 20px;
+  border-bottom: 1px solid black;
 }
