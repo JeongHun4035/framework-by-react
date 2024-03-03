@@ -2,6 +2,7 @@ import "~/styles/menu.css";
 import { dataList } from "~/mock/menus.json";
 import { useEffect, useState } from "react";
 import { IMenu } from "~/types/menu";
+import { RxChevronRight, RxChevronDown } from "react-icons/rx";
 
 const Menus = () => {
   const [menuList, setMenu] = useState<IMenu[]>([]);
@@ -14,7 +15,7 @@ const Menus = () => {
         .map((item) => ({
           ...item,
           children: buildMenuHierarchy(item.menuId),
-          expanded: false,
+          expanded: parentId === "#" ? true : false,
         }));
     };
 
@@ -37,7 +38,7 @@ const Menus = () => {
   const toggleSubMenu = (menu: IMenu, targetMenuId: string): IMenu => {
     return {
       ...menu,
-      children: menu.children.map((childMenu) =>
+      children: menu.children?.map((childMenu) =>
         childMenu.menuId === targetMenuId
           ? { ...childMenu, expanded: !childMenu.expanded }
           : toggleSubMenu(childMenu, targetMenuId)
@@ -51,7 +52,14 @@ const Menus = () => {
         {menu.parentId === "#" ? (
           <h1 onClick={() => toggleMenu(menu.menuId)}>{menu.menuTitle}</h1>
         ) : (
-          <span onClick={() => toggleMenu(menu.menuId)}> {menu.menuTitle}</span>
+          <span onClick={() => toggleMenu(menu.menuId)}>
+            {menu.expanded && menu.children?.length ? (
+              <RxChevronDown />
+            ) : (
+              <RxChevronRight />
+            )}
+            {menu.menuTitle}
+          </span>
         )}
         {menu.expanded && menu.children && renderMenu(menu.children)}
       </div>

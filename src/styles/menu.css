@@ -10,6 +10,7 @@
 .menu {
   margin-top: 5px;
   margin-left: 5px;
+  width: 100px;
 }
 
 .menu h1 {
@@ -20,9 +21,10 @@
 
 .menu span {
   font-size: 15px;
+  text-align: center;
 }
 
-.menu :hover {
+.menu span:hover {
   cursor: pointer;
   color: rgb(132 204 22);
 }
