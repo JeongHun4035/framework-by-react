@@ -3,17 +3,17 @@
     {
       "parentId": "#",
       "menuId": "menu_01",
-      "menuTitle": "Menu 1"
+      "menuTitle": "Menu"
     },
     {
       "parentId": "menu_01",
       "menuId": "menu_01_01",
-      "menuTitle": "1-1 Menu"
+      "menuTitle": "Menu"
     },
     {
       "parentId": "menu_01",
       "menuId": "menu_01_02",
-      "menuTitle": "1-2 Menu"
+      "menuTitle": "Menu"
     },
     {
       "parentId": "#",
@@ -23,22 +23,22 @@
     {
       "parentId": "menu_02",
       "menuId": "menu_02-01",
-      "menuTitle": "2-1 Menu"
+      "menuTitle": "Menu"
     },
     {
       "parentId": "menu_02-01",
       "menuId": "menu_02-01-01",
-      "menuTitle": "2-1-1 Menu"
+      "menuTitle": "Menu"
     },
     {
       "parentId": "menu_02-01",
       "menuId": "menu_02-01-02",
-      "menuTitle": "2-1-2 Menu"
+      "menuTitle": "Menu"
     },
     {
       "parentId": "menu_02-01-02",
       "menuId": "menu_02-01-02-01",
-      "menuTitle": "2-1-2-1 Menu"
+      "menuTitle": "Menu"
     },
     {
       "parentId": "#",
@@ -48,17 +48,17 @@
     {
       "parentId": "menu_03",
       "menuId": "menu_03-01",
-      "menuTitle": "3-1 Menu"
+      "menuTitle": "Menu"
     },
     {
       "parentId": "menu_03",
       "menuId": "menu_03-02",
-      "menuTitle": "3-2 Menu"
+      "menuTitle": "Menu"
     },
     {
       "parentId": "menu_03",
       "menuId": "menu_03-03",
-      "menuTitle": "3-3 Menu"
+      "menuTitle": "Menu"
     },
     {
       "parentId": "#",
@@ -68,22 +68,22 @@
     {
       "parentId": "menu_04",
       "menuId": "menu_04-01",
-      "menuTitle": "4-1 Menu"
+      "menuTitle": "Menu"
     },
     {
       "parentId": "menu_04",
       "menuId": "menu_04-02",
-      "menuTitle": "4-2 Menu"
+      "menuTitle": "Menu"
     },
     {
       "parentId": "menu_04",
       "menuId": "menu_04-03",
-      "menuTitle": "4-3 Menu"
+      "menuTitle": "Menu"
     },
     {
       "parentId": "menu_04",
       "menuId": "menu_04-04",
-      "menuTitle": "4-4 Menu"
+      "menuTitle": "Menu"
     }
   ]
 }
